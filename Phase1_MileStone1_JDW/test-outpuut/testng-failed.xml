@@ -5,6 +5,7 @@
     <classes>
       <class name="com.cname.projectname.testscenarios.appname.Test1">
         <methods>
+          <include name="init"/>
           <include name="test1"/>
         </methods>
       </class> <!-- com.cname.projectname.testscenarios.appname.Test1 -->
