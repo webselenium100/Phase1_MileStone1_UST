@@ -2,6 +2,7 @@ package com.cname.core.framework.utils;
 
 public class Global 
 {
+	public static final int syncTime = 60;
 	public static final String browserName = "chrome";
 	public static final String testDataPath = "D:\\Selenium_resource\\GITLOCALREPO\\Phase1_MileStone1_JDW\\TestDataSuite\\TestData.xlsx";
 	public static final String proPath = "C:\\Users\\raghunath reddy\\eclipse-workspace\\Phase1_MileStone1_JDW\\Environment\\config.properties";

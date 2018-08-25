@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14102" started-at="2018-08-24T03:36:46Z" finished-at="2018-08-24T03:37:00Z">
+  <suite name="Default suite" duration-ms="77861" started-at="2018-08-25T06:35:06Z" finished-at="2018-08-25T06:36:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14102" started-at="2018-08-24T03:36:46Z" finished-at="2018-08-24T03:37:00Z">
+    <test name="Default test" duration-ms="77861" started-at="2018-08-25T06:35:06Z" finished-at="2018-08-25T06:36:24Z">
       <class name="com.cname.projectname.testscenarios.appname.Test1">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.cname.projectname.testscenarios.appname.Test1@7a1ebcd8]" name="init" is-config="true" duration-ms="3291" started-at="2018-08-24T03:36:46Z" finished-at="2018-08-24T03:36:50Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.cname.projectname.testscenarios.appname.Test1@7a1ebcd8]" name="init" is-config="true" duration-ms="3504" started-at="2018-08-25T06:35:06Z" finished-at="2018-08-25T06:35:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.cname.projectname.testscenarios.appname.Test1@7a1ebcd8]" name="test1" duration-ms="10783" started-at="2018-08-24T03:36:50Z" finished-at="2018-08-24T03:37:00Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.cname.projectname.testscenarios.appname.Test1@7a1ebcd8]" name="test1" duration-ms="74326" started-at="2018-08-25T06:35:09Z" finished-at="2018-08-25T06:36:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->

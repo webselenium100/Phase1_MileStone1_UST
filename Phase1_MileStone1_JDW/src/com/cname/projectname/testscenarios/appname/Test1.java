@@ -10,7 +10,13 @@ import org.testng.annotations.Test;
 import com.cname.core.framework.datalayer.Excel;
 import com.cname.core.framework.datalayer.Property;
 import com.cname.core.framework.sewebdriver.SeWebDriver;
+import com.cname.core.framework.sewebelement.SeWebElement;
 import com.cname.projectname.testinitialization.Driver;
+import com.ust.nbrown.businessspecificlib.sbeus.SBUSCheckoutPage;
+import com.ust.nbrown.businessspecificlib.sbeus.SBUSHome;
+import com.ust.nbrown.businessspecificlib.sbeus.SBUSPLPPage;
+import com.ust.nbrown.pageobject.sbeus.SBUSHomeObj;
+import com.ust.nbrown.pageobject.sbeus.SBUSPLPPageObj;
 
 public class Test1
 {
@@ -29,7 +35,17 @@ public class Test1
 		SeWebDriver sdriver = new SeWebDriver();
 		sdriver.passUrl(url);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		WebElement w1 = sdriver.findWebElement("xpath", "//input[@id='searchString1']");
-		w1.sendKeys("Jeans");
+//		SeWebElement selement = new SeWebElement();
+//		selement.setValue("xpath", SBUSHomeObj.searchTextBox, "Jeans");
+//		selement.click("xpath", SBUSHomeObj.searchBtn);
+//		sdriver.waitForElementPresent("xpath", SBUSPLPPageObj.plpProduct);
+//		selement.click("xpath", SBUSPLPPageObj.plpProduct);
+		
+		SBUSHome shome= new SBUSHome();
+		shome.searchProduct("Jeans");
+		sdriver.waitForElementPresent("xpath", SBUSPLPPageObj.plpProduct);
+		SBUSPLPPage plp = new SBUSPLPPage();
+		plp.selectProductFromPLPPage();
+		
 	}
 }
